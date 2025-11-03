@@ -62,8 +62,21 @@ input,input::placeholder{
     width: 100%;
 }
 
+#premium{
+    background-color: #ecc22ddf;
+}
+#premium>a{
+    color: whitesmoke;
+}
+#premium:hover{
+    background-color: gold;    
+}
+
 button:hover{
     background-color: #7287fd;
+}
+input:hover{
+    background-color: #5b72a0;
 }
 
 div{
@@ -75,12 +88,6 @@ a{
     margin:20px;
     color: white;
     text-decoration: none;
-}
-#premium{
-    background-color: #dfb51d;
-}
-#premium>a{
-    color: whitesmoke;
 }
 
 .searchbar{
