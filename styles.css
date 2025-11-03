@@ -5,23 +5,23 @@
 }
 
 body{
-    background-color: rgb(41, 66, 66);
+    background-color: #1e2030;
     color: white;
 }
 
 .topbar{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(76, 76, 76);
+    border-bottom:1px solid grey;
 }
 
-.btn{
+.bar-btns{
     display: flex;
     justify-content: flex-end;
 }
 
 input,button{
-    background-color: rgb(65, 113, 100);
+    background-color: #363a4f;
     border: none;
     padding: 5px;
     padding-bottom: 7px;
@@ -38,7 +38,7 @@ input,input::placeholder{
 }
 
 button:hover{
-    background-color: #004e6d;
+    background-color: #7287fd;
 }
 
 div{
@@ -52,7 +52,7 @@ a{
     text-decoration: none;
 }
 
-.searchIcon{
+.searchbar{
     display: flex;
     justify-content: center;
 }
@@ -69,8 +69,7 @@ h3{
 }
 
 .card{
-    border: 2px solid #317b60;
-    background-color: rgb(67, 67, 67);
+    background-color:#363a4f; 
     border-radius: 8px;
     width: 200px;
     display: flex;
@@ -80,7 +79,7 @@ h3{
 }
 
 .card:hover{
-    background-color: rgb(99, 99, 99);
+    background-color:#5b72a0;
 }
 
 main{
@@ -89,13 +88,21 @@ main{
 }
 
 
-.goat{
+footer{
     height: 100px;
     width: 100%;
     border-top: 1px solid grey;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
-#socials{
-    margin: 80px;
+
+
+span{
+    background-color: rgba(255, 140, 0, 0.848);
+    font-size: larger;
+}
+footer>p{
+    margin: 15px;
 }
