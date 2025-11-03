@@ -5,12 +5,14 @@
 }
 
 body{
-    background-color: darkslategray;
+    background-color: rgb(41, 66, 66);
+    color: white;
 }
 
 .topbar{
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(76, 76, 76);
 }
 
 .btn{
@@ -53,4 +55,47 @@ a{
 .searchIcon{
     display: flex;
     justify-content: center;
+}
+
+img{
+   width: 200px; 
+   height: auto;
+   margin-bottom: 15px;
+   border-radius: 6px;
+}
+
+h3{
+    font-weight: 600;
+}
+
+.card{
+    border: 2px solid #317b60;
+    background-color: rgb(67, 67, 67);
+    border-radius: 8px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 15px;
+}
+
+.card:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+main{
+    display: flex;    
+    flex-wrap: wrap;
+}
+
+
+.goat{
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: center;
+}
+#socials{
+    margin: 80px;
 }
