@@ -8,44 +8,41 @@ body{
     background-color: darkslategray;
 }
 
-nav{
-    height: 60px;
-    width: 100%;
-    background-color: grey;
+.topbar{
     display: flex;
-    justify-content: space-around
+    justify-content: space-evenly;
 }
 
-img{
-    height: 60px;    
-    width: 60px;
+.btn{
+    display: flex;
+    justify-content: flex-end;
 }
 
 input,button{
-    background-color: darkslategray;
+    background-color: rgb(65, 113, 100);
     border: none;
     padding: 5px;
     padding-bottom: 7px;
     border-radius: 4px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
     font-weight: 500;
     font-size: large;
     cursor: pointer;
 }
 
-.searchIcon,input{
+input,input::placeholder{
+    color: white;
     width: 100%;
 }
 
 button:hover{
     background-color: #004e6d;
-
 }
+
 div{
     padding: 10px;
     margin: auto;
 }
-
 
 a{
     margin:20px;
@@ -53,3 +50,7 @@ a{
     text-decoration: none;
 }
 
+.searchIcon{
+    display: flex;
+    justify-content: center;
+}
