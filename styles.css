@@ -17,8 +17,36 @@ body {
     color: #7287fd;
 }
 
+input,
+button{
+    background-color: #1e2030;
+    border: none;
+    border-bottom: 1px solid #5b72a0;
+    padding: 5px;
+    padding-bottom: 7px;
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+}
+
+input,
+input::placeholder {
+    color: white;
+    width: 100%;
+}
+
+input:hover {
+    background-color: #5b72a061;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #1e2030;
+    border-bottom: 2px solid #7287fd;
+}
 #top-span:hover {
-    text-shadow: 1px 1px 20px #92a2fb;
+    text-shadow: 1px 1px 20px #92a2fbbf;
 }
 
 #title {
@@ -57,7 +85,12 @@ img {
     margin-bottom: 15px;
     border-radius: 6px;
 }
-
+#filter{
+    color: white;
+    border: 1px solid #5b72a0 ;
+    border-radius: 8px;
+    font-size: medium;
+}
 .logo {
     width: 100%;
     margin: 0px 15px;
@@ -76,34 +109,6 @@ img {
     align-content: center;
 }
 
-input,
-button {
-    background-color: #1e2030;
-    border: none;
-    border-bottom: 1px solid #5b72a0;
-    padding: 5px;
-    padding-bottom: 7px;
-    margin: 0px 10px;
-    font-weight: 500;
-    font-size: large;
-    cursor: pointer;
-}
-
-input,
-input::placeholder {
-    color: white;
-    width: 100%;
-}
-
-input:hover {
-    background-color: #5b72a061;
-    border-radius: 8px;
-}
-
-button:hover {
-    background-color: #1e2030;
-    border-bottom: 2px solid #7287fd;
-}
 
 #profilebtn,
 .circlebtn {
@@ -137,9 +142,14 @@ button:hover {
     border: none;
 }
 
+h4{
+    font-size: medium;
+}
+
 .searchbar {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .card {
