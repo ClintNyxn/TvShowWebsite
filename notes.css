@@ -1,0 +1,51 @@
+#note-part{
+    margin: 10px 0px;
+    color: rgb(219, 219, 219);
+}
+.note-title{
+    color: #927df0dc;
+    margin-bottom: 10px;
+}
+.note{
+    border: 1px solid grey;
+    margin: 10px;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+button{
+    color: white;
+    width: 140px;
+}
+
+nav{
+    margin-bottom: 20px;
+}
+
+#del,#edit{
+    color: #ff5555;
+    border: 1px solid #ff5555;
+    border-radius: 8px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#edit{
+    right: 110px;
+    color: rgb(223, 223, 223);
+    border: 1px solid grey;
+}
+#del:hover{
+    text-shadow: 1px 1px 20px red;
+}
+
+.note:hover #del, .note:hover #edit{
+    opacity: 1;
+}
+
+
