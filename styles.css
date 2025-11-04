@@ -1,43 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family:  sans-serif;
+    font-family: sans-serif;
 }
 
-body{
+body {
     background-color: #1e2030;
     color: white;
     font-weight: 350;
     font-size: medium;
 }
 
-#top-span{
+#top-span {
     font-family: Momo Signature;
     font-size: x-large;
     color: #7287fd;
 }
 
-.logo{
+#top-span:hover {
+    text-shadow: 1px 1px 20px #92a2fb;
+}
+
+#title {
+    font-size: larger;
+    font-weight: 599;
+    margin-bottom: 5px;
+}
+
+#date {
+    font-size: medium;
+    color: lightgrey;
+}
+
+#foot-span {
+    color: #7287fd;
+}
+
+#love {
+    font-family: Courier;
+}
+
+a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+div {
+    padding: 10px;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.logo {
     width: 100%;
     margin: 0px 15px;
 }
 
-.topbar{
+.topbar {
     display: flex;
     justify-content: space-evenly;
-    border-bottom:1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
-.bar-btns{
+.bar-btns {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-content: center;
 }
 
-
-input,button{
+input,
+button {
     background-color: #1e2030;
     border: none;
     border-bottom: 1px solid #5b72a0;
@@ -49,34 +89,24 @@ input,button{
     cursor: pointer;
 }
 
-input,input::placeholder{
+input,
+input::placeholder {
     color: white;
     width: 100%;
 }
 
-#premium{
-    border-radius: 4px;
-    background-color: #ecc22ddf;
-}
-#premium>a{
-    color: whitesmoke;
+input:hover {
+    background-color: #5b72a061;
+    border-radius: 8px;
 }
 
-
-button:hover{
+button:hover {
     background-color: #1e2030;
     border-bottom: 2px solid #7287fd;
-
-}
-#premium:hover{
-    background-color: gold;    
-    border: none;
-}
-input:hover{
-    background-color: #5b72a0;
 }
 
-#profilebtn{
+#profilebtn,
+.circlebtn {
     border-radius: 50%;
     border: none;
     width: 40px;
@@ -86,60 +116,98 @@ input:hover{
     justify-content: center;
     align-items: center;
 }
-#profilebtn:hover{
+
+#profilebtn:hover,
+.circlebtn:hover {
     background-color: #7287fd;
+    border: none;
 }
 
-div{
-    padding: 10px;
-    margin: auto;
+#premium {
+    border-radius: 4px;
+    background-color: #ecc22ddf;
 }
 
-a{
-    margin:20px;
-    color: white;
-    text-decoration: none;
+#premium>a {
+    color: whitesmoke;
 }
 
-.searchbar{
+#premium:hover {
+    background-color: gold;
+    border: none;
+}
+
+.searchbar {
     display: flex;
     justify-content: center;
 }
 
-img{
-   width: 200px; 
-   height: auto;
-   margin-bottom: 15px;
-   border-radius: 6px;
-}
-
-.card{
-    background-color:#363a4f; 
+.card {
+    background-color: #363a4f;
     width: 200px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin: 8px;
+    position: relative;
 }
-#title{
+
+#title {
     font-size: larger;
     font-weight: 599;
     margin-bottom: 5px;
 }
-#date{
+
+#date {
     font-size: medium;
-    color:lightgrey;
-}
-.card:hover{
-    background-color:#5b72a0;
+    color: rgb(145, 145, 145);
 }
 
-main{
-    display: flex;    
+.card:hover {
+    background-color: #5b72a0ba;
+    box-shadow: 0px 0px 90px #7287fd43;
+}
+
+#playbtn {
+    background-color: #5b72a0;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+}
+
+#bkbtn {
+    background-color: #5b72a0;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+#bkbtn:hover,
+#playbtn:hover {
+    background-color: #fd7272;
+    border: none;
+}
+
+
+.card #playbtn,
+.card #bkbtn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover #playbtn,
+.card:hover #bkbtn {
+    opacity: 1;
+}
+
+main {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-footer{
+footer {
     height: 100px;
     width: 100%;
     border-top: 1px solid grey;
@@ -147,13 +215,23 @@ footer{
     position: relative;
     bottom: 0;
     margin-top: 15px;
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
 }
 
-
-#foot-span{
-    color: #7287fd;
-}
-
-footer>p{
+footer>p {
     margin: 15px;
+}
+
+footer
+
+.fa {
+    font-size: larger;
+    text-decoration: none;
+}
+
+#social {
+    display: flex;
+
 }
